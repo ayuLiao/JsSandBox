@@ -5,7 +5,7 @@ const env = require(`${__dirname}/env/env`)
 
 
 const vm = new VM();
-const need_debug_code = fs.readFileSync(`${__dirname}/code/zhvmp.js`)
+const need_debug_code = fs.readFileSync(`${__dirname}/code/test.js`)
 const tools_code = sandbox.GetCode()
 const env_code = env.GetCode()
 
