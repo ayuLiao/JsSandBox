@@ -1,0 +1,5 @@
+box = {
+    config: {
+        proxy: true
+    }
+}
