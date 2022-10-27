@@ -1,4 +1,3 @@
-// Object.defineProperty() 通过描述对象，定义对象属性
 box.defineProperty = function defineProperty(obj, key, value, configurable, enumerable, writable, getter, setter){
     let attr = {
         configurable: configurable,

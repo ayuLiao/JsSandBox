@@ -10,12 +10,10 @@ function ObjectHandler(name) {
                             console.log(`[${name}]-[get] property: [${property}], result: [${result}]`);
                         }
                 }
-                // toString方法 与 symbol类型 不进行多重代理（代理后location.toString()会报错）
                 if (property !== 'toString' && typeof(property) != 'symbol') {
                     return new Proxy(result, ObjectHandler(`${name}.${property}`))
                 }
             }
-            // 避免打印报错
             if (typeof(property) !== 'symbol') {
                 console.log(`[${name}]-[get] property: [${property.description ? property.description:property}], result: [${result}]`);
             }

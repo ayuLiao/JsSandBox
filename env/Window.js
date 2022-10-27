@@ -16,7 +16,6 @@ box.defineProperty(Window.prototype, 'TEMPORARY', 0, false, true, false);
 box.defineProperty(Window.prototype, 'PERSISTENT', 1, false, true, false);
 
 
-// 不直接生成window
 window = globalThis
 Object.setPrototypeOf(window, Window.prototype)
 box.defineProperty(window, 'atob', function atob(str) {
