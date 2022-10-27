@@ -6,7 +6,7 @@ Many websites use complex JavaScript protection techniques, which hinders us fro
 
 We developed JsSandBox based on the idea of mimicking the browser environment, allowing you to obtain the target's complete encrypted parameters without the need for in-depth knowledge of the target site's Javascript
 
-## feature
+## Feature
 
 - You can use tools/dump_browser_env.js to copy the browser environment with one click
 - You can use tools/vm_proxy.js Hook any object
